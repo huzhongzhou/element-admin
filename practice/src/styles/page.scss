@@ -1,0 +1,86 @@
+.page {
+  padding: 24px;
+  .e-card {
+    ::v-deep.el-card__body {
+      padding: 24px;
+      border-radius: 2px;
+      border: 0 solid #979797;
+    }
+  }
+  .e-card+.e-card {
+    margin-top: 16px;
+  }
+  .e-dialog {
+    ::v-deep {
+      .el-dialog__header {
+        padding: 16px 24px;
+        border-bottom: 1px solid #F0F0F0;
+      }
+      .el-dialog__body {
+        padding: 24px 24px 16px;
+        border-bottom: 1px solid #F0F0F0;
+      }
+      .el-dialog__footer {
+        padding: 20px 16px;
+      }
+    }
+  }
+  .btn-box {
+    .el-button+.el-button {
+      margin-left: 20px;
+    }
+  }
+  .e-radio-group {
+    ::v-deep {
+      .el-radio-button__inner {
+        border-color: #D9D9D9;
+      }
+      .is-active {
+        .el-radio-button__inner {
+          color: #407FFE;
+          background-color: #FFF;
+          border-color: #407FFE;
+        }
+      }
+    }
+  }
+  .e-tabs {
+    ::v-deep {
+      .el-tabs__header {
+        border-bottom: none;
+        margin-bottom: 0;
+        .el-tabs__nav {
+          border: none;
+          .el-tabs__item {
+            background-color: #fff;
+            border-radius: 4px 4px 0 0;
+            border-left: none;
+            margin-left: 4px;
+            &:first-child {
+              margin-left: 0;
+            }
+            &.is-active {
+              background-color: #407FFE;
+              color: #fff;
+            }
+          }
+        }
+      }
+      .el-tabs__content {
+        background-color: #fff;
+        border-radius: 2px;
+        padding: 24px;
+      }
+    }
+  }
+  .table-box {
+    span.is-link {
+      color: #407FFE;
+      cursor: pointer;
+    }
+    .pagination-container {
+      padding-top: 6px;
+      padding-bottom: 0;
+    }
+  }
+}
